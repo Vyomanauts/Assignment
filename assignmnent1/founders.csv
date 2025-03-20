@@ -1,0 +1,6 @@
+id,name,industry,startup_stage,funding_required,traction,business_model,location
+1,Founder 1,SaaS,Seed,$3996K,44043 active users,Transaction Fee,City 29
+2,Founder 2,AI,Series B,$2598K,38649 active users,Hardware + Subscription,City 29
+3,Founder 3,E-commerce,Pre-seed,$2486K,40226 active users,Marketplace,City 8
+4,Founder 4,SaaS,Series B,$4899K,45779 active users,B2B SaaS,City 11
+5,Founder 5,SaaS,Series B,$4950K,39501 active users,Hardware + Subscription,City 25

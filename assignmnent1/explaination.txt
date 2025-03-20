@@ -1,0 +1,23 @@
+Flask Founder-Investor Matcher App – Explanation
+
+This web app helps match startup founders with investors based on industry and startup stage. It lets users:
+
+1. Upload two CSV files – one for founders, one for investors.
+
+2. Select a founder from a dropdown list.
+3. Find investors whose preferences align with the founder’s industry and stage.
+4. View results on a simple webpage (without showing a match score).
+
+
+# How It Works
+1. Flask App Setup – The app is built using Flask, a Python web framework.
+2. Handling File Uploads – Users upload CSV files containing founder and investor details.
+3. Processing Data – The app reads and stores the CSV data.
+4. Matching Logic – It compares the founder's industry and startup stage with investor preferences.
+5. Displaying Results – Matching investors are shown on a webpage using a simple HTML template.
+6. How to Use It
+7. Run the Flask app.
+8. Open the webpage in a browser.
+9. Upload the founders.csv and investors.csv files.
+10. Select a founder from the dropdown.
+11. See a list of matching investors.

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Founder-Investor Matcher</title>
+</head>
+<body>
+    <h2>Upload Data</h2>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="founders">
+        <input type="file" name="investors">
+        <button type="submit">Upload</button>
+    </form>
+    
+    {% if founders %}
+    <h2>Select Founder</h2>
+    <form method="post">
+        <select name="founder_id">
+            {% for founder in founders %}
+                <option value="{{ founder.id }}">{{ founder.name }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Find Matches</button>
+    </form>
+    {% endif %}
+    
+    {% if matches %}
+    <h2>Founder-Investor Matches</h2>
+    <table border="1">
+        <tr>
+            <th>Investor</th>
+            <th>Industry</th>
+            <th>Stage</th>
+        </tr>
+        {% for match in matches %}
+        <tr>
+            <td>{{ match.name }}</td>
+            <td>{{ match.preferred_industry }}</td>
+            <td>{{ match.preferred_stage }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+</body>
+</html>
